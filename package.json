@@ -1,0 +1,12 @@
+{
+  "name": "bookmark-system",
+  "version": "1.0.0",
+  "description": "Personal bookmark system with Cloudflare Pages",
+  "scripts": {
+    "build": "echo 'No build step required'",
+    "deploy": "wrangler pages publish public --project-name=bookmark-system"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
