@@ -9,4 +9,4 @@ database_id = "YOUR_DATABASE_ID"
 
 [[kv_namespaces]]
 binding = "KV_BING"
-id = "YOUR_KV_NAMESPACE_ID"
+id = "a88c9529dcf54ce7b88fc52e639d91cb"
