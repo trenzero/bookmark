@@ -5,7 +5,7 @@ pages_build_output_dir = "./public"
 [[d1_databases]]
 binding = "DB"
 database_name = "bookmark-db"
-database_id = "YOUR_DATABASE_ID"
+database_id = "f1d36f83-3d16-4109-a005-8bc562b5a09b"
 
 [[kv_namespaces]]
 binding = "KV_BING"
