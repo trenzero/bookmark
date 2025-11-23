@@ -1,0 +1,12 @@
+name = "bookmark-system"
+compatibility_date = "2024-01-15"
+pages_build_output_dir = "./public"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "bookmark-db"
+database_id = "YOUR_DATABASE_ID"
+
+[[kv_namespaces]]
+binding = "KV_BING"
+id = "YOUR_KV_NAMESPACE_ID"
