@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的书签导航</title>
+    <meta name="description" content="个人书签管理系统">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta name="theme-color" content="#1a1a1a"/>
+</head>
+<body>
+    <div class="app-container">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>📚 书签导航</h1>
+            </div>
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <h3>分类</h3>
+                    <ul id="category-list">
+                        <li><a href="#" class="active" data-category="all">全部书签</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3>标签</h3>
+                    <div id="tag-cloud"></div>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- 主内容区 -->
+        <main class="main-content">
+            <header class="top-header">
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="搜索书签...">
+                    <button id="search-btn">搜索</button>
+                </div>
+                <div class="header-actions">
+                    <button id="theme-toggle" class="btn-icon">🌙</button>
+                    <button id="add-bookmark-btn" class="btn-primary">添加书签</button>
+                    <button id="import-export-btn" class="btn-secondary">导入/导出</button>
+                </div>
+            </header>
+
+            <div class="content-area">
+                <div class="bookmarks-grid" id="bookmarks-grid">
+                    <!-- 书签卡片将通过 JavaScript 动态生成 -->
+                </div>
+                
+                <div class="pagination" id="pagination">
+                    <!-- 分页控件 -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- 添加书签模态框 -->
+    <div id="bookmark-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>添加新书签</h3>
+                <button class="close-btn">&times;</button>
+            </div>
+            <form id="bookmark-form">
+                <div class="form-group">
+                    <label for="bookmark-title">标题</label>
+                    <input type="text" id="bookmark-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="bookmark-url">URL</label>
+                    <input type="url" id="bookmark-url" required>
+                </div>
+                <div class="form-group">
+                    <label for="bookmark-description">描述</label>
+                    <textarea id="bookmark-description" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="bookmark-category">分类</label>
+                    <select id="bookmark-category">
+                        <option value="">无分类</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>标签</label>
+                    <div id="tag-selector"></div>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="bookmark-public">
+                        <span class="checkmark"></span>
+                        公开书签
+                    </label>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn-secondary" id="cancel-btn">取消</button>
+                    <button type="submit" class="btn-primary">保存</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>
