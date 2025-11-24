@@ -4,7 +4,7 @@ compatibility_flags = ["nodejs_compat"]
 
 [env.production]
 d1_databases = [
-  { binding = "DB", database_name = "bookmark-db", database_id = "YOUR_DATABASE_ID" }
+  { binding = "DB", database_name = "bookmark-db", database_id = "8a7e0d50-8fb1-4f82-8aec-42f2b8b298ec" }
 ]
 
 [[kv_namespaces]]
@@ -14,7 +14,7 @@ preview_id = "5eb7a3ae36574f7199e92f46e5537098"
 
 [env.development]
 d1_databases = [
-  { binding = "DB", database_name = "bookmark-db", database_id = "YOUR_DEV_DATABASE_ID" }
+  { binding = "DB", database_name = "bookmark-db", database_id = "8a7e0d50-8fb1-4f82-8aec-42f2b8b298ec" }
 ]
 
 [[kv_namespaces]]
