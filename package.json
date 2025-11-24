@@ -1,0 +1,15 @@
+{
+  "name": "bookmark-navigation",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:create": "wrangler d1 create bookmark-db",
+    "db:init": "wrangler d1 execute bookmark-db --file=./schema.sql",
+    "db:export": "wrangler d1 execute bookmark-db --command='SELECT * FROM bookmarks' --export",
+    "db:import": "wrangler d1 execute bookmark-db --file=./import.sql"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
