@@ -9,8 +9,8 @@ d1_databases = [
 
 [[kv_namespaces]]
 binding = "KV"
-id = "YOUR_KV_NAMESPACE_ID"
-preview_id = "YOUR_KV_PREVIEW_ID"
+id = "5eb7a3ae36574f7199e92f46e5537098"
+preview_id = "5eb7a3ae36574f7199e92f46e5537098"
 
 [env.development]
 d1_databases = [
@@ -19,5 +19,5 @@ d1_databases = [
 
 [[kv_namespaces]]
 binding = "KV"
-id = "YOUR_DEV_KV_ID"
-preview_id = "YOUR_DEV_KV_PREVIEW_ID"
+id = "5eb7a3ae36574f7199e92f46e5537098"
+preview_id = "5eb7a3ae36574f7199e92f46e5537098"
