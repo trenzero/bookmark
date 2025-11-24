@@ -1,0 +1,23 @@
+name = "bookmark-navigation"
+compatibility_date = "2023-10-01"
+compatibility_flags = ["nodejs_compat"]
+
+[env.production]
+d1_databases = [
+  { binding = "DB", database_name = "bookmark-db", database_id = "YOUR_DATABASE_ID" }
+]
+
+[[kv_namespaces]]
+binding = "KV"
+id = "YOUR_KV_NAMESPACE_ID"
+preview_id = "YOUR_KV_PREVIEW_ID"
+
+[env.development]
+d1_databases = [
+  { binding = "DB", database_name = "bookmark-db", database_id = "YOUR_DEV_DATABASE_ID" }
+]
+
+[[kv_namespaces]]
+binding = "KV"
+id = "YOUR_DEV_KV_ID"
+preview_id = "YOUR_DEV_KV_PREVIEW_ID"
