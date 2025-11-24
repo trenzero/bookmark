@@ -7,17 +7,7 @@ d1_databases = [
   { binding = "DB", database_name = "bookmark-db", database_id = "8a7e0d50-8fb1-4f82-8aec-42f2b8b298ec" }
 ]
 
-[[kv_namespaces]]
-binding = "KV"
-id = "5eb7a3ae36574f7199e92f46e5537098"
-preview_id = "5eb7a3ae36574f7199e92f46e5537098"
-
 [env.development]
 d1_databases = [
   { binding = "DB", database_name = "bookmark-db", database_id = "8a7e0d50-8fb1-4f82-8aec-42f2b8b298ec" }
 ]
-
-[[kv_namespaces]]
-binding = "KV"
-id = "5eb7a3ae36574f7199e92f46e5537098"
-preview_id = "5eb7a3ae36574f7199e92f46e5537098"
